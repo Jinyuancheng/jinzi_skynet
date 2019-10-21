@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{B999D843-6540-40F4-BDC8-AF4151FE6290}</ProjectGuid>
+    <RootNamespace>jinziskynet</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\arena_externs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\arena_inlines_a.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\arena_inlines_b.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\arena_stats.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\arena_structs_a.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\arena_structs_b.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\arena_types.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\assert.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\atomic.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\atomic_c11.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\atomic_gcc_atomic.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\atomic_gcc_sync.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\atomic_msvc.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\background_thread_externs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\background_thread_inlines.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\background_thread_structs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\base_externs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\base_inlines.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\base_structs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\base_types.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\bin.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\bin_stats.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\bin_types.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\bitmap.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\bit_util.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\cache_bin.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\ckh.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\ctl.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\div.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\emitter.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\extent_dss.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\extent_externs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\extent_inlines.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\extent_mmap.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\extent_structs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\extent_types.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\hash.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\hook.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\jemalloc_internal_decls.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\jemalloc_internal_externs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\jemalloc_internal_includes.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\jemalloc_internal_inlines_a.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\jemalloc_internal_inlines_b.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\jemalloc_internal_inlines_c.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\jemalloc_internal_macros.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\jemalloc_internal_types.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\large_externs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\log.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\malloc_io.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\mutex.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\mutex_pool.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\mutex_prof.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\nstime.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\pages.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\ph.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\prng.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\prof_externs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\prof_inlines_a.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\prof_inlines_b.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\prof_structs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\prof_types.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\ql.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\qr.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\quantum.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\rb.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\rtree.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\rtree_tsd.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\sc.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\seq.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\smoothstep.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\spin.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\stats.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\sz.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tcache_externs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tcache_inlines.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tcache_structs.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tcache_types.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\test_hooks.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\ticker.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tsd.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tsd_generic.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tsd_malloc_thread_cleanup.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tsd_tls.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tsd_types.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\tsd_win.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\util.h" />
+    <ClInclude Include="3rd\jemalloc\include\jemalloc\internal\witness.h" />
+    <ClInclude Include="3rd\jemalloc\include\msvc_compat\C99\stdbool.h" />
+    <ClInclude Include="3rd\jemalloc\include\msvc_compat\C99\stdint.h" />
+    <ClInclude Include="3rd\jemalloc\include\msvc_compat\strings.h" />
+    <ClInclude Include="3rd\jemalloc\include\msvc_compat\windows_extra.h" />
+    <ClInclude Include="3rd\jemalloc\msvc\test_threads\test_threads.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\btalloc.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\extent_hooks.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\math.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\mq.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\mtx.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-alti.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params11213.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params1279.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params132049.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params19937.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params216091.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params2281.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params4253.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params44497.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params607.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-params86243.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT-sse2.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\SFMT.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\test.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\thd.h" />
+    <ClInclude Include="3rd\jemalloc\test\include\test\timer.h" />
+    <ClInclude Include="3rd\lpeg\lpcap.h" />
+    <ClInclude Include="3rd\lpeg\lpcode.h" />
+    <ClInclude Include="3rd\lpeg\lpprint.h" />
+    <ClInclude Include="3rd\lpeg\lptree.h" />
+    <ClInclude Include="3rd\lpeg\lptypes.h" />
+    <ClInclude Include="3rd\lpeg\lpvm.h" />
+    <ClInclude Include="3rd\lua-md5\compat-5.2.h" />
+    <ClInclude Include="3rd\lua-md5\md5.h" />
+    <ClInclude Include="3rd\lua\lapi.h" />
+    <ClInclude Include="3rd\lua\lauxlib.h" />
+    <ClInclude Include="3rd\lua\lcode.h" />
+    <ClInclude Include="3rd\lua\lctype.h" />
+    <ClInclude Include="3rd\lua\ldebug.h" />
+    <ClInclude Include="3rd\lua\ldo.h" />
+    <ClInclude Include="3rd\lua\lfunc.h" />
+    <ClInclude Include="3rd\lua\lgc.h" />
+    <ClInclude Include="3rd\lua\llex.h" />
+    <ClInclude Include="3rd\lua\llimits.h" />
+    <ClInclude Include="3rd\lua\lmem.h" />
+    <ClInclude Include="3rd\lua\lobject.h" />
+    <ClInclude Include="3rd\lua\lopcodes.h" />
+    <ClInclude Include="3rd\lua\lparser.h" />
+    <ClInclude Include="3rd\lua\lprefix.h" />
+    <ClInclude Include="3rd\lua\lstate.h" />
+    <ClInclude Include="3rd\lua\lstring.h" />
+    <ClInclude Include="3rd\lua\ltable.h" />
+    <ClInclude Include="3rd\lua\ltm.h" />
+    <ClInclude Include="3rd\lua\lua.h" />
+    <ClInclude Include="3rd\lua\lua.hpp" />
+    <ClInclude Include="3rd\lua\luaconf.h" />
+    <ClInclude Include="3rd\lua\lualib.h" />
+    <ClInclude Include="3rd\lua\lundump.h" />
+    <ClInclude Include="3rd\lua\lvm.h" />
+    <ClInclude Include="3rd\lua\lzio.h" />
+    <ClInclude Include="lualib-src\lua-seri.h" />
+    <ClInclude Include="lualib-src\sproto\msvcint.h" />
+    <ClInclude Include="lualib-src\sproto\sproto.h" />
+    <ClInclude Include="service-src\databuffer.h" />
+    <ClInclude Include="service-src\hashid.h" />
+    <ClInclude Include="skynet-src\atomic.h" />
+    <ClInclude Include="skynet-src\malloc_hook.h" />
+    <ClInclude Include="skynet-src\rwlock.h" />
+    <ClInclude Include="skynet-src\skynet.h" />
+    <ClInclude Include="skynet-src\skynet_daemon.h" />
+    <ClInclude Include="skynet-src\skynet_env.h" />
+    <ClInclude Include="skynet-src\skynet_handle.h" />
+    <ClInclude Include="skynet-src\skynet_harbor.h" />
+    <ClInclude Include="skynet-src\skynet_imp.h" />
+    <ClInclude Include="skynet-src\skynet_log.h" />
+    <ClInclude Include="skynet-src\skynet_malloc.h" />
+    <ClInclude Include="skynet-src\skynet_module.h" />
+    <ClInclude Include="skynet-src\skynet_monitor.h" />
+    <ClInclude Include="skynet-src\skynet_mq.h" />
+    <ClInclude Include="skynet-src\skynet_server.h" />
+    <ClInclude Include="skynet-src\skynet_socket.h" />
+    <ClInclude Include="skynet-src\skynet_timer.h" />
+    <ClInclude Include="skynet-src\socket_epoll.h" />
+    <ClInclude Include="skynet-src\socket_info.h" />
+    <ClInclude Include="skynet-src\socket_kqueue.h" />
+    <ClInclude Include="skynet-src\socket_poll.h" />
+    <ClInclude Include="skynet-src\socket_server.h" />
+    <ClInclude Include="skynet-src\spinlock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="3rd\jemalloc\msvc\test_threads\test_threads.cpp" />
+    <ClCompile Include="3rd\jemalloc\msvc\test_threads\test_threads_main.cpp" />
+    <ClCompile Include="3rd\jemalloc\src\arena.c" />
+    <ClCompile Include="3rd\jemalloc\src\background_thread.c" />
+    <ClCompile Include="3rd\jemalloc\src\base.c" />
+    <ClCompile Include="3rd\jemalloc\src\bin.c" />
+    <ClCompile Include="3rd\jemalloc\src\bitmap.c" />
+    <ClCompile Include="3rd\jemalloc\src\ckh.c" />
+    <ClCompile Include="3rd\jemalloc\src\ctl.c" />
+    <ClCompile Include="3rd\jemalloc\src\div.c" />
+    <ClCompile Include="3rd\jemalloc\src\extent.c" />
+    <ClCompile Include="3rd\jemalloc\src\extent_dss.c" />
+    <ClCompile Include="3rd\jemalloc\src\extent_mmap.c" />
+    <ClCompile Include="3rd\jemalloc\src\hash.c" />
+    <ClCompile Include="3rd\jemalloc\src\hook.c" />
+    <ClCompile Include="3rd\jemalloc\src\jemalloc.c" />
+    <ClCompile Include="3rd\jemalloc\src\jemalloc_cpp.cpp" />
+    <ClCompile Include="3rd\jemalloc\src\large.c" />
+    <ClCompile Include="3rd\jemalloc\src\log.c" />
+    <ClCompile Include="3rd\jemalloc\src\malloc_io.c" />
+    <ClCompile Include="3rd\jemalloc\src\mutex.c" />
+    <ClCompile Include="3rd\jemalloc\src\mutex_pool.c" />
+    <ClCompile Include="3rd\jemalloc\src\nstime.c" />
+    <ClCompile Include="3rd\jemalloc\src\pages.c" />
+    <ClCompile Include="3rd\jemalloc\src\prng.c" />
+    <ClCompile Include="3rd\jemalloc\src\prof.c" />
+    <ClCompile Include="3rd\jemalloc\src\rtree.c" />
+    <ClCompile Include="3rd\jemalloc\src\sc.c" />
+    <ClCompile Include="3rd\jemalloc\src\stats.c" />
+    <ClCompile Include="3rd\jemalloc\src\sz.c" />
+    <ClCompile Include="3rd\jemalloc\src\tcache.c" />
+    <ClCompile Include="3rd\jemalloc\src\test_hooks.c" />
+    <ClCompile Include="3rd\jemalloc\src\ticker.c" />
+    <ClCompile Include="3rd\jemalloc\src\tsd.c" />
+    <ClCompile Include="3rd\jemalloc\src\witness.c" />
+    <ClCompile Include="3rd\jemalloc\src\zone.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\aligned_alloc.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\allocated.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\cpp\basic.cpp" />
+    <ClCompile Include="3rd\jemalloc\test\integration\extent.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\malloc.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\mallocx.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\MALLOCX_ARENA.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\overflow.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\posix_memalign.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\rallocx.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\sdallocx.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\slab_sizes.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\smallocx.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\thread_arena.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\thread_tcache_enabled.c" />
+    <ClCompile Include="3rd\jemalloc\test\integration\xallocx.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\btalloc.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\btalloc_0.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\btalloc_1.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\math.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\mq.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\mtx.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\SFMT.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\test.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\thd.c" />
+    <ClCompile Include="3rd\jemalloc\test\src\timer.c" />
+    <ClCompile Include="3rd\jemalloc\test\stress\hookbench.c" />
+    <ClCompile Include="3rd\jemalloc\test\stress\microbench.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\a0.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\arena_reset.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\arena_reset_prof.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\atomic.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\background_thread.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\background_thread_enable.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\base.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\binshard.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\bitmap.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\bit_util.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\ckh.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\decay.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\div.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\emitter.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\extent_quantize.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\fork.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\hash.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\hook.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\huge.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\junk.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\junk_alloc.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\junk_free.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\log.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\mallctl.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\malloc_io.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\math.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\mq.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\mtx.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\nstime.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\pack.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\pages.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\ph.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prng.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prof_accum.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prof_active.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prof_gdump.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prof_idump.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prof_log.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prof_reset.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prof_tctx.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\prof_thread_name.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\ql.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\qr.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\rb.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\retained.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\rtree.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\sc.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\seq.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\SFMT.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\size_classes.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\slab.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\smoothstep.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\spin.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\stats.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\stats_print.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\test_hooks.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\ticker.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\tsd.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\witness.c" />
+    <ClCompile Include="3rd\jemalloc\test\unit\zero.c" />
+    <ClCompile Include="3rd\lpeg\lpcap.c" />
+    <ClCompile Include="3rd\lpeg\lpcode.c" />
+    <ClCompile Include="3rd\lpeg\lpprint.c" />
+    <ClCompile Include="3rd\lpeg\lptree.c" />
+    <ClCompile Include="3rd\lpeg\lpvm.c" />
+    <ClCompile Include="3rd\lua-md5\compat-5.2.c" />
+    <ClCompile Include="3rd\lua-md5\md5.c" />
+    <ClCompile Include="3rd\lua-md5\md5lib.c" />
+    <ClCompile Include="3rd\lua\lapi.c" />
+    <ClCompile Include="3rd\lua\lauxlib.c" />
+    <ClCompile Include="3rd\lua\lbaselib.c" />
+    <ClCompile Include="3rd\lua\lbitlib.c" />
+    <ClCompile Include="3rd\lua\lcode.c" />
+    <ClCompile Include="3rd\lua\lcorolib.c" />
+    <ClCompile Include="3rd\lua\lctype.c" />
+    <ClCompile Include="3rd\lua\ldblib.c" />
+    <ClCompile Include="3rd\lua\ldebug.c" />
+    <ClCompile Include="3rd\lua\ldo.c" />
+    <ClCompile Include="3rd\lua\ldump.c" />
+    <ClCompile Include="3rd\lua\lfunc.c" />
+    <ClCompile Include="3rd\lua\lgc.c" />
+    <ClCompile Include="3rd\lua\linit.c" />
+    <ClCompile Include="3rd\lua\liolib.c" />
+    <ClCompile Include="3rd\lua\llex.c" />
+    <ClCompile Include="3rd\lua\lmathlib.c" />
+    <ClCompile Include="3rd\lua\lmem.c" />
+    <ClCompile Include="3rd\lua\loadlib.c" />
+    <ClCompile Include="3rd\lua\lobject.c" />
+    <ClCompile Include="3rd\lua\lopcodes.c" />
+    <ClCompile Include="3rd\lua\loslib.c" />
+    <ClCompile Include="3rd\lua\lparser.c" />
+    <ClCompile Include="3rd\lua\lstate.c" />
+    <ClCompile Include="3rd\lua\lstring.c" />
+    <ClCompile Include="3rd\lua\lstrlib.c" />
+    <ClCompile Include="3rd\lua\ltable.c" />
+    <ClCompile Include="3rd\lua\ltablib.c" />
+    <ClCompile Include="3rd\lua\ltm.c" />
+    <ClCompile Include="3rd\lua\lua.c" />
+    <ClCompile Include="3rd\lua\luac.c" />
+    <ClCompile Include="3rd\lua\lundump.c" />
+    <ClCompile Include="3rd\lua\lutf8lib.c" />
+    <ClCompile Include="3rd\lua\lvm.c" />
+    <ClCompile Include="3rd\lua\lzio.c" />
+    <ClCompile Include="lualib-src\lsha1.c" />
+    <ClCompile Include="lualib-src\ltls.c" />
+    <ClCompile Include="lualib-src\lua-bson.c" />
+    <ClCompile Include="lualib-src\lua-clientsocket.c" />
+    <ClCompile Include="lualib-src\lua-cluster.c" />
+    <ClCompile Include="lualib-src\lua-crypt.c" />
+    <ClCompile Include="lualib-src\lua-datasheet.c" />
+    <ClCompile Include="lualib-src\lua-debugchannel.c" />
+    <ClCompile Include="lualib-src\lua-memory.c" />
+    <ClCompile Include="lualib-src\lua-mongo.c" />
+    <ClCompile Include="lualib-src\lua-multicast.c" />
+    <ClCompile Include="lualib-src\lua-netpack.c" />
+    <ClCompile Include="lualib-src\lua-profile.c" />
+    <ClCompile Include="lualib-src\lua-seri.c" />
+    <ClCompile Include="lualib-src\lua-sharedata.c" />
+    <ClCompile Include="lualib-src\lua-sharetable.c" />
+    <ClCompile Include="lualib-src\lua-skynet.c" />
+    <ClCompile Include="lualib-src\lua-socket.c" />
+    <ClCompile Include="lualib-src\lua-stm.c" />
+    <ClCompile Include="lualib-src\sproto\lsproto.c" />
+    <ClCompile Include="lualib-src\sproto\sproto.c" />
+    <ClCompile Include="service-src\service_gate.c" />
+    <ClCompile Include="service-src\service_harbor.c" />
+    <ClCompile Include="service-src\service_logger.c" />
+    <ClCompile Include="service-src\service_snlua.c" />
+    <ClCompile Include="skynet-src\malloc_hook.c" />
+    <ClCompile Include="skynet-src\skynet_daemon.c" />
+    <ClCompile Include="skynet-src\skynet_env.c" />
+    <ClCompile Include="skynet-src\skynet_error.c" />
+    <ClCompile Include="skynet-src\skynet_handle.c" />
+    <ClCompile Include="skynet-src\skynet_harbor.c" />
+    <ClCompile Include="skynet-src\skynet_log.c" />
+    <ClCompile Include="skynet-src\skynet_main.c" />
+    <ClCompile Include="skynet-src\skynet_module.c" />
+    <ClCompile Include="skynet-src\skynet_monitor.c" />
+    <ClCompile Include="skynet-src\skynet_mq.c" />
+    <ClCompile Include="skynet-src\skynet_server.c" />
+    <ClCompile Include="skynet-src\skynet_socket.c" />
+    <ClCompile Include="skynet-src\skynet_start.c" />
+    <ClCompile Include="skynet-src\skynet_timer.c" />
+    <ClCompile Include="skynet-src\socket_server.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3rd\lpeg\lpeg.html" />
+    <None Include="3rd\lpeg\re.html" />
+    <None Include="HISTORY.md" />
+    <None Include="LICENSE" />
+    <None Include="Makefile" />
+    <None Include="platform.mk" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
