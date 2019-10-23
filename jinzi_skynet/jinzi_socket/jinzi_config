@@ -1,5 +1,9 @@
-include "config.path"
-
+root = "./"
+luaservice = root.."service/?.lua;"..root.."jinzi_socket/?.lua"
+lualoader = root .. "lualib/loader.lua"
+lua_path = root.."lualib/?.lua;"..root.."lualib/?/init.lua"
+lua_cpath = root .. "luaclib/?.so"
+snax = root.."examples/?.lua;"..root.."test/?.lua"
 -- preload = "./examples/preload.lua"	-- run preload.lua before every lua service run
 thread = 8
 logger = nil
@@ -7,7 +11,7 @@ logpath = "."
 harbor = 1
 address = "127.0.0.1:2526"
 master = "127.0.0.1:2013"
-start = "jinzi_main"	-- main script
+start = "jinzi_socket_main"	-- main script
 bootstrap = "snlua bootstrap"	-- The service for bootstrap
 standalone = "0.0.0.0:2013"
 -- snax_interface_g = "snax_g"

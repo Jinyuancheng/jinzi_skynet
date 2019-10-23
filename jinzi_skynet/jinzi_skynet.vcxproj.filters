@@ -1178,5 +1178,6 @@
     <None Include="Makefile" />
     <None Include="platform.mk" />
     <None Include="README.md" />
+    <None Include="jinzi_test\main.lua" />
   </ItemGroup>
 </Project>

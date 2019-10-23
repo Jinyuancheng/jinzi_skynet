@@ -506,6 +506,7 @@
     <None Include="3rd\lpeg\lpeg.html" />
     <None Include="3rd\lpeg\re.html" />
     <None Include="HISTORY.md" />
+    <None Include="jinzi_test\main.lua" />
     <None Include="LICENSE" />
     <None Include="Makefile" />
     <None Include="platform.mk" />
